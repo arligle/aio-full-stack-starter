@@ -1,7 +1,7 @@
 {
   "name": "aio-full-stack-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "AIO FULL STACK STARTER",
   "keywords": [],
   "author": "",
   "license": "ISC", 
@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "clean": "git clean -xdf node_modules",
-    "debut": "biome dev"
+    "debut": "biome dev",
+    "preinstall": "npx only-allow pnpm"
   },
   "config": {
     "commitizen": {

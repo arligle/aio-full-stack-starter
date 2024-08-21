@@ -32,6 +32,6 @@
 		}
 	},
 	"files": {
-		"ignore": [".turbo", "node_modules/*", "dist", "./*.json", "kits/*"]
+		"ignore": [".turbo", "node_modules/*", "test","dist", "./*.json", "kits/*"]
 	}
 }
