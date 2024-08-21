@@ -1,0 +1,36 @@
+{
+  "name": "aio-full-stack-starter",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC", 
+  "scripts": {
+    "lint": "biome lint .",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "lint:ws-fix": "pnpm dlx sherif@latest --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "clean": "git clean -xdf node_modules",
+    "debut": "biome dev"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.7"
+  },
+  "packageManager": "pnpm@9.3.0",
+  "volta": 
+    {"node": "20.16.0",
+     "pnpm": "9.3.0"
+    }
+}
