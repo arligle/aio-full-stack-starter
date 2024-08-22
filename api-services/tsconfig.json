@@ -36,6 +36,12 @@
       ],
       "@ifc-drizzle/data-modeling/*": [
         "libs/data-modeling/src/*"
+      ],
+      "@ifc/configify": [
+        "libs/configify/src"
+      ],
+      "@ifc/configify/*": [
+        "libs/configify/src/*"
       ]
     }
   },

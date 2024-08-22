@@ -82,7 +82,8 @@
     ],
     "moduleNameMapper": {
       "^@ifc-drizzle/node-postgres(|/.*)$": "<rootDir>/libs/node-postgres/src/$1",
-      "^@ifc-drizzle/data-modeling(|/.*)$": "<rootDir>/libs/data-modeling/src/$1"
+      "^@ifc-drizzle/data-modeling(|/.*)$": "<rootDir>/libs/data-modeling/src/$1",
+      "^@ifc/configify(|/.*)$": "<rootDir>/libs/configify/src/$1"
     }
   }
 }

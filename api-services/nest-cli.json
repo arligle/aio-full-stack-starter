@@ -45,6 +45,15 @@
       "compilerOptions": {
         "tsConfigPath": "libs/data-modeling/tsconfig.lib.json"
       }
+    },
+    "configify": {
+      "type": "library",
+      "root": "libs/configify",
+      "entryFile": "index",
+      "sourceRoot": "libs/configify/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/configify/tsconfig.lib.json"
+      }
     }
   }
 }
