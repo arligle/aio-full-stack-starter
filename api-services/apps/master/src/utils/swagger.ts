@@ -1,11 +1,10 @@
-import type { NestFastifyApplication } from '@nestjs/platform-fastify';
+import type { NestFastifyApplication } from "@nestjs/platform-fastify";
 
-import { AppConfig, AppModule } from '@/master/modules/app';
-import { NestFactory } from '@nestjs/core';
-import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import * as fs from 'node:fs';
-
-import { initialize } from './helper';
+import { AppConfig, AppModule } from "@/master/modules/app";
+import { NestFactory } from "@nestjs/core";
+import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
+import * as fs from "node:fs";
+import { initialize } from "./helper";
 
 /**
  * Generate Swagger JSON Schema offline, it used to deploy the document to other server but not the
@@ -29,7 +28,7 @@ import { initialize } from './helper';
       .setTitle(npm_package_name)
       .setDescription(npm_package_description)
       .setVersion(npm_package_version)
-      .addServer('http://localhost:3000', 'Localhost')
+      .addServer("http://localhost:3000", "Localhost")
       .build()
   );
 
@@ -44,14 +43,16 @@ import { initialize } from './helper';
     if (key.match(/(.*)Res/)) {
       schemas[key] = {
         properties: { data: value },
-        required: ['data'],
-        type: 'object',
+        required: ["data"],
+        type: "object",
       };
     }
   }
-
+  // 生成swagger.json文件，需要你在项目根目录下创建docs文件夹
+  // TODO: 通过环境变量控制生成swagger.json文件的路径
   fs.writeFileSync(
-    `${__filename.slice(__dirname.length + 1, -3)}.json`,
+    `./docs/${__filename.slice(__dirname.length + 1, -3)}.json`,
+    // path.join(__dirname, '..', 'swagger.json'),
     JSON.stringify(swaggerDoc)
   );
 
