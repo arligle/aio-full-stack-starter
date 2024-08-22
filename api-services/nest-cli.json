@@ -27,6 +27,24 @@
       "compilerOptions": {
         "tsConfigPath": "apps/reader/tsconfig.app.json"
       }
+    },
+    "node-postgres": {
+      "type": "library",
+      "root": "libs/node-postgres",
+      "entryFile": "index",
+      "sourceRoot": "libs/node-postgres/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/node-postgres/tsconfig.lib.json"
+      }
+    },
+    "data-modeling": {
+      "type": "library",
+      "root": "libs/data-modeling",
+      "entryFile": "index",
+      "sourceRoot": "libs/data-modeling/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/data-modeling/tsconfig.lib.json"
+      }
     }
   }
 }
