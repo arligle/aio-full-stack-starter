@@ -19,13 +19,13 @@
         "tsConfigPath": "apps/master/tsconfig.app.json"
       }
     },
-    "reader": {
+    "platform": {
       "type": "application",
-      "root": "apps/reader",
+      "root": "apps/platform",
       "entryFile": "main",
-      "sourceRoot": "apps/reader/src",
+      "sourceRoot": "apps/platform/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/reader/tsconfig.app.json"
+        "tsConfigPath": "apps/platform/tsconfig.app.json"
       }
     },
     "node-postgres": {
@@ -53,6 +53,69 @@
       "sourceRoot": "libs/configify/src",
       "compilerOptions": {
         "tsConfigPath": "libs/configify/tsconfig.lib.json"
+      }
+    },
+    "bootstrap": {
+      "type": "library",
+      "root": "libs/bootstrap",
+      "entryFile": "index",
+      "sourceRoot": "libs/bootstrap/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/bootstrap/tsconfig.lib.json"
+      }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config",
+      "entryFile": "index",
+      "sourceRoot": "libs/config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config/tsconfig.lib.json"
+      }
+    },
+    "logger": {
+      "type": "library",
+      "root": "libs/logger",
+      "entryFile": "index",
+      "sourceRoot": "libs/logger/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/logger/tsconfig.lib.json"
+      }
+    },
+    "validation": {
+      "type": "library",
+      "root": "libs/validation",
+      "entryFile": "index",
+      "sourceRoot": "libs/validation/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/validation/tsconfig.lib.json"
+      }
+    },
+    "crypto": {
+      "type": "library",
+      "root": "libs/crypto",
+      "entryFile": "index",
+      "sourceRoot": "libs/crypto/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/crypto/tsconfig.lib.json"
+      }
+    },
+    "server-http-client": {
+      "type": "library",
+      "root": "libs/server-http-client",
+      "entryFile": "index",
+      "sourceRoot": "libs/server-http-client/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/server-http-client/tsconfig.lib.json"
+      }
+    },
+    "utils": {
+      "type": "library",
+      "root": "libs/utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/utils/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/utils/tsconfig.lib.json"
       }
     }
   }

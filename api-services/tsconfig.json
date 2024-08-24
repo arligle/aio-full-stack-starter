@@ -18,12 +18,17 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "paths": {
       "@/api-services/*": [
         "./*"
       ],
       "@/master/*": [
         "apps/master/src/*"
+      ],
+      "@/platform/*": [
+        "apps/platform/src/*"
       ],
       "@ifc-drizzle/node-postgres": [
         "libs/node-postgres/src"
@@ -42,6 +47,48 @@
       ],
       "@ifc/configify/*": [
         "libs/configify/src/*"
+      ],
+      "@ifckit/bootstrap": [
+        "libs/bootstrap/src"
+      ],
+      "@ifckit/bootstrap/*": [
+        "libs/bootstrap/src/*"
+      ],
+      "@ifckit/config": [
+        "libs/config/src"
+      ],
+      "@ifckit/config/*": [
+        "libs/config/src/*"
+      ],
+      "@ifckit/logger": [
+        "libs/logger/src"
+      ],
+      "@ifckit/logger/*": [
+        "libs/logger/src/*"
+      ],
+      "@ifckit/validation": [
+        "libs/validation/src"
+      ],
+      "@ifckit/validation/*": [
+        "libs/validation/src/*"
+      ],
+      "@ifckit/crypto": [
+        "libs/crypto/src"
+      ],
+      "@ifckit/crypto/*": [
+        "libs/crypto/src/*"
+      ],
+      "@ifckit/server-http-client": [
+        "libs/server-http-client/src"
+      ],
+      "@ifckit/server-http-client/*": [
+        "libs/server-http-client/src/*"
+      ],
+      "@ifckit/utils": [
+        "libs/utils/src"
+      ],
+      "@ifckit/utils/*": [
+        "libs/utils/src/*"
       ]
     }
   },

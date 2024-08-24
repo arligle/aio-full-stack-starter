@@ -4,7 +4,7 @@
   "description": "AIO FULL STACK STARTER",
   "keywords": [],
   "author": "",
-  "license": "ISC", 
+  "license": "ISC",
   "scripts": {
     "lint": "biome lint .",
     "lint:ws": "pnpm dlx sherif@latest",
@@ -30,8 +30,8 @@
     "lint-staged": "^15.2.7"
   },
   "packageManager": "pnpm@9.3.0",
-  "volta": 
-    {"node": "20.16.0",
-     "pnpm": "9.3.0"
-    }
+  "volta": {
+    "node": "20.16.0",
+    "pnpm": "9.3.0"
+  }
 }

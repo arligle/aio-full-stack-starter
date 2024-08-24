@@ -1,0 +1,7 @@
+BASE_PATH=/api
+CLUSTERING=false
+LOG_LEVEL=
+NODE_ENV=development
+PORT=3000
+# database
+DATABASE_URL=postgresql://admin:admin@localhost:5438/ifc-saas-db

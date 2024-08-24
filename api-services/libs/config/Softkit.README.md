@@ -51,7 +51,7 @@ export class YourAppModule {}
 ---
 
 
-## This wrapper has a few additions: 
+## 这个封装功能上有一些补充: 
 
 - 它具有*配置文件*功能，因此您可以针对不同的环境进行不同的配置。
   - NESTJS_PROFILES -是一个环境变量，用于定义要使用的配置文件

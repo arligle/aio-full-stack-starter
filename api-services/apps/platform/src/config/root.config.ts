@@ -1,12 +1,13 @@
 import { Type } from "class-transformer";
 import { SamlConfig } from "./saml.config";
+import { LoggerConfig } from '@ifckit/logger';
 import { ValidateNested } from "class-validator";
 
 
 export default class RootConfig {
-  // @Type(() => LoggerConfig)
-  // @ValidateNested()
-  // public readonly logs!: LoggerConfig;
+  @Type(() => LoggerConfig)
+  @ValidateNested()
+  public readonly logs!: LoggerConfig;
 
   // @Type(() => AuthConfig)
   // @ValidateNested()
