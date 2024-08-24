@@ -1,3 +1,6 @@
+import { Type } from "class-transformer";
+import { SamlConfig } from "./saml.config";
+import { ValidateNested } from "class-validator";
 
 
 export default class RootConfig {
@@ -29,7 +32,7 @@ export default class RootConfig {
   // @ValidateNested()
   // public readonly health!: HealthConfig;
 
-  // @Type(() => SamlConfig)
-  // @ValidateNested()
-  // public readonly saml!: SamlConfig;
+  @Type(() => SamlConfig)
+  @ValidateNested()
+  public readonly saml!: SamlConfig;
 }
