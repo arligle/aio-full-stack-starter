@@ -117,6 +117,24 @@
       "compilerOptions": {
         "tsConfigPath": "libs/utils/tsconfig.lib.json"
       }
+    },
+    "exceptions": {
+      "type": "library",
+      "root": "libs/exceptions",
+      "entryFile": "index",
+      "sourceRoot": "libs/exceptions/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/exceptions/tsconfig.lib.json"
+      }
+    },
+    "i18n": {
+      "type": "library",
+      "root": "libs/i18n",
+      "entryFile": "index",
+      "sourceRoot": "libs/i18n/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/i18n/tsconfig.lib.json"
+      }
     }
   }
 }

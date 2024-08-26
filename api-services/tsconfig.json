@@ -89,6 +89,18 @@
       ],
       "@ifckit/utils/*": [
         "libs/utils/src/*"
+      ],
+      "@ifckit/exceptions": [
+        "libs/exceptions/src"
+      ],
+      "@ifckit/exceptions/*": [
+        "libs/exceptions/src/*"
+      ],
+      "@ifckit/i18n": [
+        "libs/i18n/src"
+      ],
+      "@ifckit/i18n/*": [
+        "libs/i18n/src/*"
       ]
     }
   },
