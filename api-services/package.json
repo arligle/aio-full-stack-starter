@@ -32,6 +32,7 @@
     "@nestjs/graphql": "^12.2.0",
     "@nestjs/platform-fastify": "^10.4.1",
     "@nestjs/swagger": "^7.4.0",
+    "@nestjs/typeorm": "^10.0.2",
     "accept-language-parser": "^1.5.0",
     "argon2": "^0.40.3",
     "axios": "^1.7.4",
@@ -55,12 +56,16 @@
     "nanoid": "^5.0.7",
     "nest-typed-config": "^2.9.3",
     "nestjs-cls": "^4.4.1",
+    "nestjs-paginate": "^9.0.1",
     "nestjs-pino": "^4.1.0",
     "pino": "^9.3.2",
     "pino-http": "^10.2.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "string-format": "^2.0.0",
+    "typeorm": "^0.3.20",
+    "typeorm-naming-strategies": "^4.1.0",
+    "typeorm-transactional": "^0.5.0",
     "validator": "^13.12.0",
     "yargs": "^17.7.2"
   },
@@ -120,7 +125,11 @@
       "^@ifckit/server-http-client(|/.*)$": "<rootDir>/libs/server-http-client/src/$1",
       "^@ifckit/utils(|/.*)$": "<rootDir>/libs/utils/src/$1",
       "^@ifckit/exceptions(|/.*)$": "<rootDir>/libs/exceptions/src/$1",
-      "^@ifckit/i18n(|/.*)$": "<rootDir>/libs/i18n/src/$1"
+      "^@ifckit/i18n(|/.*)$": "<rootDir>/libs/i18n/src/$1",
+      "^@ifckit/typeorm(|/.*)$": "<rootDir>/libs/typeorm/src/$1",
+      "^@ifckit/persistence-api(|/.*)$": "<rootDir>/libs/persistence-api/src/$1",
+      "^@ifckit/common-types(|/.*)$": "<rootDir>/libs/common-types/src/$1",
+      "^@ifckit/string-utils(|/.*)$": "<rootDir>/libs/string-utils/src/$1"
     }
   }
 }

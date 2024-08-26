@@ -135,6 +135,42 @@
       "compilerOptions": {
         "tsConfigPath": "libs/i18n/tsconfig.lib.json"
       }
+    },
+    "typeorm": {
+      "type": "library",
+      "root": "libs/typeorm",
+      "entryFile": "index",
+      "sourceRoot": "libs/typeorm/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/typeorm/tsconfig.lib.json"
+      }
+    },
+    "persistence-api": {
+      "type": "library",
+      "root": "libs/persistence-api",
+      "entryFile": "index",
+      "sourceRoot": "libs/persistence-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/persistence-api/tsconfig.lib.json"
+      }
+    },
+    "common-types": {
+      "type": "library",
+      "root": "libs/common-types",
+      "entryFile": "index",
+      "sourceRoot": "libs/common-types/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common-types/tsconfig.lib.json"
+      }
+    },
+    "string-utils": {
+      "type": "library",
+      "root": "libs/string-utils",
+      "entryFile": "index",
+      "sourceRoot": "libs/string-utils/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/string-utils/tsconfig.lib.json"
+      }
     }
   }
 }

@@ -101,6 +101,30 @@
       ],
       "@ifckit/i18n/*": [
         "libs/i18n/src/*"
+      ],
+      "@ifckit/typeorm": [
+        "libs/typeorm/src"
+      ],
+      "@ifckit/typeorm/*": [
+        "libs/typeorm/src/*"
+      ],
+      "@ifckit/persistence-api": [
+        "libs/persistence-api/src"
+      ],
+      "@ifckit/persistence-api/*": [
+        "libs/persistence-api/src/*"
+      ],
+      "@ifckit/common-types": [
+        "libs/common-types/src"
+      ],
+      "@ifckit/common-types/*": [
+        "libs/common-types/src/*"
+      ],
+      "@ifckit/string-utils": [
+        "libs/string-utils/src"
+      ],
+      "@ifckit/string-utils/*": [
+        "libs/string-utils/src/*"
       ]
     }
   },
