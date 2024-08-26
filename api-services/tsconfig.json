@@ -125,6 +125,12 @@
       ],
       "@ifckit/string-utils/*": [
         "libs/string-utils/src/*"
+      ],
+      "@ifckit/auth": [
+        "libs/auth/src"
+      ],
+      "@ifckit/auth/*": [
+        "libs/auth/src/*"
       ]
     }
   },
