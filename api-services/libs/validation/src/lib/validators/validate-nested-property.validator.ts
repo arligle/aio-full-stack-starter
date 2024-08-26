@@ -12,10 +12,7 @@ interface ValidateNestedPropertyOptions<T> {
   validationOptions?: ValidationOptions;
   classType: new () => T;
 }
-/**
- * @description 用于在 NestJS 框架中验证嵌套对象属性。
-这个装饰器函数结合了多个验证装饰器，以便简化对嵌套对象属性的验证逻辑。
- */
+
 export const ValidateNestedProperty = <T>({
   required = true,
   validationOptions = {},

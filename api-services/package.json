@@ -47,6 +47,7 @@
     "fastify": "^4.28.1",
     "fs-extra": "^11.2.0",
     "hbs": "^4.2.0",
+    "isISO8601": "link:validator/lib/isISO8601",
     "iterare": "^1.2.1",
     "joi": "^17.13.3",
     "js-yaml": "^4.1.0",
@@ -60,6 +61,7 @@
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "string-format": "^2.0.0",
+    "validator": "^13.12.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
@@ -74,6 +76,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.16.1",
     "@types/supertest": "^6.0.0",
+    "@types/validator": "^13.12.1",
     "@types/yargs": "^17.0.33",
     "jest": "^29.5.0",
     "pino-pretty": "^11.2.2",
