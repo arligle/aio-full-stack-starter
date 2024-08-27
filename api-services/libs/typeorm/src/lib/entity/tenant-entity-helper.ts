@@ -1,4 +1,4 @@
-import { BaseTrackedEntityHelper } from './entity-helper';
+import { BaseTrackedEntityHelper } from './base-entity-helper';
 import { Column, Index } from 'typeorm';
 import { ClsPreset } from '../subscribers/decorator/cls-preset.decorator';
 import { ApiProperty } from '@nestjs/swagger';
@@ -25,4 +25,8 @@ export class BaseTenantEntityHelper
   @Index()
   @Expose()
   tenantId!: string;
+}
+// 确保 tenantId 属性在 Tenant 类型中存在
+export interface Tenant extends BaseTenantEntityHelper {
+  // 其他属性定义
 }

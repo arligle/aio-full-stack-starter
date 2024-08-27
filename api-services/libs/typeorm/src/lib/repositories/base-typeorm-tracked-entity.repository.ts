@@ -1,6 +1,6 @@
 import { type DataSource, type FindOptionsWhere, In, IsNull, Not } from 'typeorm';
 import { BaseTypeormEntityRepository } from './base-typeorm-entity.repository';
-import type { BaseTrackedEntityHelper } from '../entity/entity-helper';
+import type { BaseTrackedEntityHelper } from '../entity/base-entity-helper';
 import type { ITrackedRepository, LimitOptions } from '@ifckit/persistence-api';
 import type { ObjectType } from 'typeorm/common/ObjectType';
 

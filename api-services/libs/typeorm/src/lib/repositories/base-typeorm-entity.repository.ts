@@ -6,7 +6,7 @@ import {
   In,
   type Repository,
 } from 'typeorm';
-import type { EntityHelper } from '../entity/entity-helper';
+import type { BaseEntityHelper } from '../entity/base-entity-helper';
 import { AbstractRepository, type LimitOptions } from '@ifckit/persistence-api';
 import type { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
 import type { Never } from '@ifckit/common-types';
@@ -19,10 +19,10 @@ import {
 import type { ObjectType } from 'typeorm/common/ObjectType';
 
 export abstract class BaseTypeormEntityRepository<
-  ENTITY extends EntityHelper,
+  ENTITY extends BaseEntityHelper,
   ID extends keyof ENTITY,
   FIELDS_REQUIRED_FOR_UPDATE extends keyof ENTITY = ID,
-  AUTO_GENERATED_FIELDS extends keyof ENTITY = ID | keyof EntityHelper,
+  AUTO_GENERATED_FIELDS extends keyof ENTITY = ID | keyof BaseEntityHelper,
 > extends AbstractRepository<
   ENTITY,
   ID,

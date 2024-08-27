@@ -11,7 +11,7 @@ import type {
 } from '@ifckit/persistence-api';
 import { Expose } from 'class-transformer';
 
-export abstract class EntityHelper extends BaseEntity implements Base { }
+export abstract class BaseEntityHelper extends BaseEntity implements Base { }
 /**
  * @description 通过这些抽象类，可以简化和标准化实体类的定义和管理，使得代码更加简洁和易于维护。
  * @export
@@ -19,7 +19,7 @@ export abstract class EntityHelper extends BaseEntity implements Base { }
  * @class BaseTrackedEntityHelper
  */
 export abstract class BaseTrackedEntityHelper
-  extends EntityHelper
+  extends BaseEntityHelper
   implements BaseTrackedEntity {
   @ApiProperty({
     type: Date,

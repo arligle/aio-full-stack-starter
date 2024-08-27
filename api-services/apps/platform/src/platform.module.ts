@@ -18,7 +18,7 @@ import { Logger } from 'nestjs-pino';
     */
     // TODO: 注意环境变量的配置文件的路径获取，__dirname是构建后dist目录下的main.js文件所在的目录
     setupYamlBaseConfigModule(
-      path.join(__dirname, '../../../', 'apps/platform/'),
+      path.join(__dirname, '../../../', 'apps/platform/src'),
       RootConfig
     ),
   ],

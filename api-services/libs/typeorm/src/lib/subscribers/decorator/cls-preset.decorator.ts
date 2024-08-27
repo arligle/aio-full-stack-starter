@@ -1,5 +1,5 @@
 import { getMetadataArgsStorage } from 'typeorm';
-import { BaseTrackedEntityHelper } from '../../entity/entity-helper';
+import { BaseTrackedEntityHelper } from '../../entity/base-entity-helper';
 import {
   defaultClsMetadataStore,
   PresetType,

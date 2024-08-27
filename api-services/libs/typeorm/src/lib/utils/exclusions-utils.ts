@@ -1,4 +1,4 @@
-import type { BaseTrackedEntityHelper, EntityHelper } from '../../index';
+import type { BaseTrackedEntityHelper, BaseEntityHelper } from '../../index';
 
 export const DEFAULT_ENTITY_EXCLUDE_LIST = [
   'hasId',
@@ -7,7 +7,7 @@ export const DEFAULT_ENTITY_EXCLUDE_LIST = [
   'softRemove',
   'reload',
   'save',
-] as Array<keyof EntityHelper>;
+] as Array<keyof BaseEntityHelper>;
 
 export const DEFAULT_CREATE_ENTITY_EXCLUDE_LIST = [
   ...DEFAULT_ENTITY_EXCLUDE_LIST,
@@ -24,4 +24,4 @@ export const DEFAULT_UPDATE_ENTITY_EXCLUDE_LIST = [
   'createdAt',
   'updatedAt',
   'deletedAt',
-] as Array<keyof EntityHelper | 'id' | 'createdAt' | 'updatedAt' | 'deletedAt'>;
+] as Array<keyof BaseEntityHelper | 'id' | 'createdAt' | 'updatedAt' | 'deletedAt'>;
